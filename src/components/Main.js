@@ -11,12 +11,8 @@ const { SubMenu } = Menu;
 const { Content, Sider } = Layout;
 
 class Main extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      breadcrumbs: []
-    }
+  state = {
+    breadcrumbs: []
   }
 
   render() {
@@ -34,25 +30,20 @@ class Main extends Component {
             <Sider className="site-layout-background" width={275}>
               <Menu
                 mode="inline"
-                defaultSelectedKeys={['sub1']}
+                defaultSelectedKeys={['menu1']}
                 defaultOpenKeys={['sub2']}
                 style={{ height: '100%' }}
               >
-                <SubMenu key="sub1" title="Overview">
-                  <Menu.Item key="1">Don't</Menu.Item>
-                  <Menu.Item key="2">Click</Menu.Item>
-                  <Menu.Item key="3">This</Menu.Item>
-                  <Menu.Item key="4">Yet</Menu.Item>
-                </SubMenu>
+                <Menu.Item key="menu1"><Link to="/b2b-for-good/">Overview</Link></Menu.Item>
                 <SubMenu key="sub2" title="Cohorts">
                   <Menu.Item key="5"><Link to="/b2b-for-good/cohorts/6">Code for Good (June 2020)</Link></Menu.Item>
-                  <Menu.Item key="6"><Link to="/b2b-for-good/cohorts/24">Code for Good (Oct 2020)</Link></Menu.Item>
+                  <Menu.Item key="6"><Link to="/b2b-for-good/cohorts/24">Code for Good (October 2020)</Link></Menu.Item>
                 </SubMenu>
               </Menu>
             </Sider>
             <Content style={{ padding: '0 24px', minHeight: 280 }}>
               <Route exact path="/b2b-for-good/" component={ Dashboard } />
-              <Route path="/b2b-for-good/cohorts/:cohortId" component={ CohortDetail } />
+              <Route path="/b2b-for-good/cohorts/:cohortId" render={props => <CohortDetail {...props} />} />
             </Content>
           </Layout>
         </div>
