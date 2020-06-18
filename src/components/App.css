@@ -18,6 +18,10 @@ html, body {
   font-size: 140%;
 }
 
+.logo a {
+  color: #fff;
+}
+
 .logo img {
   padding-right: 6px;
   padding-bottom: 3px;
