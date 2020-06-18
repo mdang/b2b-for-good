@@ -10,11 +10,12 @@ const App = () => {
   return (
     <Layout>
       <Header className="header">
-        <div className="logo"><h1>B2B for Good</h1></div>
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
+        <div className="logo"><h1><img src="https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/6301/GA_Cog_Large_Red_RGB.png" /> <span>B2B for Good</span></h1></div>
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} style={{ float: 'right' }}>
           <Menu.Item key="1">nav 1</Menu.Item>
           <Menu.Item key="2">nav 2</Menu.Item>
           <Menu.Item key="3">nav 3</Menu.Item>
+          <Menu.Item key="4" style={{ background: '#fa4542', color: '#fff' }}>Sponsor a Student</Menu.Item>
         </Menu>
       </Header>
       <Content style={{ padding: '0 50px' }}>
@@ -49,12 +50,18 @@ const App = () => {
                 <Menu.Item key="11">option11</Menu.Item>
                 <Menu.Item key="12">option12</Menu.Item>
               </SubMenu>
+              <SubMenu key="sub4" title="subnav 4">
+                <Menu.Item key="13">option13</Menu.Item>
+                <Menu.Item key="14">option14</Menu.Item>
+                <Menu.Item key="15">option15</Menu.Item>
+                <Menu.Item key="16">option16</Menu.Item>
+              </SubMenu>
             </Menu>
           </Sider>
           <Content style={{ padding: '0 24px', minHeight: 280 }}>Content</Content>
         </Layout>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>©2020 B2B for Good</Footer>
+      <Footer style={{ textAlign: 'center' }}>©2020 General Assembly. All rights reserved.</Footer>
     </Layout>
   );
 }
