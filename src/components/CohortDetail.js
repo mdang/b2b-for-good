@@ -3,6 +3,8 @@ import { PageHeader, Steps, Descriptions, Tag, Card, Col, Row, Divider, Table } 
 
 import './CohortDetail.css';
 
+import { GithubOutlined } from '@ant-design/icons';
+
 const { Step } = Steps;
 const { Meta } = Card;
 
@@ -166,15 +168,12 @@ class CohortDetail extends Component {
                             style={{ width: 240 }}
                             cover={<img alt={ student.name } src={ student.pic } />}
                           >
-                            <Meta title={ student.name } description="" />
+                            <Meta title={ student.name } description={<a href="/b2b-for-good/"><GithubOutlined /> View Projects</a>} />
                           </Card>
                         </Col>
                       )
                     })
                   }
-                  
-                  
-                  
                 </Row>
               </section>
 
