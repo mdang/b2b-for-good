@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dde088928b96d39a8c4ef5e90fd959fc",
+    "revision": "65b519858ca5e3d91bf07d2da7241c21",
     "url": "/b2b-for-good/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/b2b-for-good/static/css/2.f47422e6.chunk.css"
   },
   {
-    "revision": "e1fe4a9def1fe4ad574b",
+    "revision": "606d0c1c1996df41a598",
     "url": "/b2b-for-good/static/css/main.d79b2fd6.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/b2b-for-good/static/js/2.7ce612b0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e1fe4a9def1fe4ad574b",
-    "url": "/b2b-for-good/static/js/main.2b0a91d3.chunk.js"
+    "revision": "606d0c1c1996df41a598",
+    "url": "/b2b-for-good/static/js/main.1af195c0.chunk.js"
   },
   {
     "revision": "ca6cf02aa77d8991cfca",
