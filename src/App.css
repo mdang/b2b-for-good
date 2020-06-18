@@ -1,0 +1,18 @@
+@import '~antd/dist/antd.css';
+
+.logo {
+  margin: 16px;
+}
+.logo h1 {
+  font-size: 150%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.site-layout-sub-header-background {
+  background: #fff;
+}
+
+.site-layout-background {
+  background: #fff;
+}
