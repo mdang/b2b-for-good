@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { PageHeader, Steps, Descriptions, Tabs, Tag, Card, Col, Row } from 'antd';
+import { PageHeader, Steps, Descriptions, Tag, Card, Col, Row, Divider } from 'antd';
 
 import './CohortDetail.css';
 
 const { Step } = Steps;
-const { TabPane } = Tabs;
+// const { TabPane } = Tabs;
 const { Meta } = Card;
 
 const cohort6 = {
@@ -84,8 +84,9 @@ class CohortDetail extends Component {
           subTitle={ cohort.instance }
           tags={<Tag color="blue">{ cohort.stage }</Tag>}
           footer={
-            <Tabs defaultActiveKey="1">
-              <TabPane tab="Sponsoring" key="1" style={{ paddingTop: '22px' }}>
+            <div>
+              <Divider orientation="left" style={{ paddingTop: '24px' }}>Sponsoring</Divider>
+              <section style={{ paddingTop: '22px' }}>
                 <Row gutter={16}>
                   <Col span={8}>
                     <Card
@@ -100,15 +101,17 @@ class CohortDetail extends Component {
                     <Card
                       hoverable
                       style={{ width: 240 }}
-                      cover={<img alt="student 2" src="https://ca.slack-edge.com/T024JRAUL-UCHNJCX4P-e1fc22a6af1c-512" />}
+                      cover={<img alt="student 2" src="https://ca.slack-edge.com/T024JRAUL-U0DKSPFEJ-043fdae6025f-512" />}
                     >
-                      <Meta title="Tucker Wieland" description="" />
+                      <Meta title="Tara Abaring" description="" />
                     </Card>
                   </Col>
                   <Col span={8}></Col>
                 </Row>
-              </TabPane>
-              <TabPane tab="Learning Journey" key="2" style={{ paddingTop: '22px' }}>
+              </section>
+
+              <Divider orientation="left" style={{ paddingTop: '24px' }}>Progress Tracker</Divider>
+              <section style={{ paddingTop: '22px' }}>
                 <Row gutter={16}>
                   <Col span={6}>
                     <h4>Front-end Development</h4>
@@ -181,8 +184,8 @@ class CohortDetail extends Component {
                     </Steps>
                   </Col>
                 </Row>
-              </TabPane>
-            </Tabs>
+              </section>
+              </div>
           }>
             {renderContent()}
         </PageHeader>
