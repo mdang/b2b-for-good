@@ -17,12 +17,16 @@ const cohort6 = {
   currentTopic: 32,
   news: [
     {
-      eventName: 'something',
-      date: '6/22'
+      eventName: 'Unit 3 Group Project Presentations',
+      date: '8/12'
     },
     {
-      eventName: 'something else',
-      date: '7/22'
+      eventName: 'Lunch and Learn: A Day in the Life',
+      date: '9/3'
+    },
+    {
+      eventName: 'Student Happy Hour',
+      date: '9/17'
     }
   ]
 }
@@ -38,12 +42,20 @@ const cohort24 = {
   currentTopic: 0, 
   news: [
     {
+      eventName: 'Web Readiness Assessment',
+      date: '9/1'
+    },
+    {
       eventName: 'Student interviews',
-      date: '9/22-10/15'
+      date: '9/7-9/15'
     },
     {
       eventName: 'Class begins',
-      date: '10/23'
+      date: '10/12'
+    },
+    {
+      eventName: 'Installfest',
+      date: '10/12'
     }
   ]
 }
