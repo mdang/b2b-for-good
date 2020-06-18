@@ -41,7 +41,7 @@ class CohortDetail extends Component {
       }
     ];
 
-    if (this.props.match.params.cohortId == 6) {
+    if (this.props.match.params.cohortId === 6) {
       cohort = cohort6;
     } else {
       cohort = cohort24;
