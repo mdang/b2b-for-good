@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PageHeader, Tabs } from 'antd';
+import { PageHeader } from 'antd';
 
 import { Link } from 'react-router-dom';
 
