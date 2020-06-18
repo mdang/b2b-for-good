@@ -48,7 +48,7 @@ class CohortDetail extends Component {
     }
 
     routes.push({
-      path: '/b2b-for-good/${ this.props.match.params.cohortId }',
+      path: `/b2b-for-good/${ this.props.match.params.cohortId }`,
       breadcrumbName: `${cohort.name} (${cohort.instance})`,
     });
 
