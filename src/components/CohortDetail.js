@@ -58,9 +58,9 @@ class CohortDetail extends Component {
         <Descriptions.Item label="Completion">{ cohort.end }</Descriptions.Item>
         <Descriptions.Item label="Duration">12 weeks, full-time</Descriptions.Item>
         <Descriptions.Item label="Location">Remote</Descriptions.Item>
-        <Descriptions.Item label="Client Success Manager"><a href="#">Amy Almeida</a></Descriptions.Item>
-        <Descriptions.Item label="Instructors"><a href="#">Marc Wright</a>, <a href="#">Isha Arora</a>, <a href="#">Casey Harding</a></Descriptions.Item>
-        <Descriptions.Item label="Students"><a href="#">{ cohort.studentCount }</a></Descriptions.Item>
+        <Descriptions.Item label="Client Success Manager"><a href="/b2b-for-good/">Amy Almeida</a></Descriptions.Item>
+        <Descriptions.Item label="Instructors"><a href="/b2b-for-good/">Marc Wright</a>, <a href="/b2b-for-good/">Isha Arora</a>, <a href="/b2b-for-good/">Casey Harding</a></Descriptions.Item>
+        <Descriptions.Item label="Students"><a href="/b2b-for-good/">{ cohort.studentCount }</a></Descriptions.Item>
       </Descriptions>
     );
 
