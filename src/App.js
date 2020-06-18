@@ -10,7 +10,7 @@ const App = () => {
   return (
     <Layout>
       <Header className="header">
-        <div className="logo"><h1><img src="https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/6301/GA_Cog_Large_Red_RGB.png" /> <span>B2B for Good</span></h1></div>
+        <div className="logo"><h1><img alt="GA Logo" src="https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/6301/GA_Cog_Large_Red_RGB.png" /> <span>B2B for Good</span></h1></div>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} style={{ float: 'right' }}>
           <Menu.Item key="1">nav 1</Menu.Item>
           <Menu.Item key="2">nav 2</Menu.Item>
