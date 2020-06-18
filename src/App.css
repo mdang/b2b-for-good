@@ -1,16 +1,16 @@
 @import '~antd/dist/antd.css';
 
 .logo {
-  margin: 16px;
-}
-.logo h1 {
-  font-size: 150%;
-  font-weight: bold;
-  color: #fff;
+  width: 120px;
+  height: 31px;
+  float: left;
+  margin-right: 3em;
 }
 
-.site-layout-sub-header-background {
-  background: #fff;
+.logo h1 {
+  font-size: 125%;
+  font-weight: bold;
+  color: #fff;
 }
 
 .site-layout-background {
