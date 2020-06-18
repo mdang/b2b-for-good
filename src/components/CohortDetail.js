@@ -10,11 +10,21 @@ const cohort6 = {
   name: 'Code for Good',
   instance: 'June 2020',
   currentStep: 4,
-  studentCount: 24,
+  studentCount: 25,
   stage: 'In Progress',
   start: 'June 24, 2020',
   end: 'September 25, 2020',
   currentTopic: 32,
+  students: [
+    {
+      name: 'Tucker Wieland',
+      pic: 'https://ca.slack-edge.com/T024JRAUL-UCHNJCX4P-e1fc22a6af1c-512'
+    },
+    {
+      name: 'Tara Abaring',
+      pic: 'https://ca.slack-edge.com/T024JRAUL-U0DKSPFEJ-043fdae6025f-512'
+    }
+  ],
   news: [
     {
       eventName: 'Unit 3 Group Project Presentations',
@@ -35,11 +45,25 @@ const cohort24 = {
   name: 'Code for Good',
   instance: 'October 2020',
   currentStep: 1,
-  studentCount: 11,
+  studentCount: 'Pending',
   stage: 'Admissions',
   start: 'October 12, 2020',
   end: 'December 19, 2020',
   currentTopic: 0, 
+  students: [
+    {
+      name: 'William Alexander',
+      pic: 'https://ca.slack-edge.com/T024JRAUL-UTHPWB883-fa28037061c5-512'
+    },
+    {
+      name: 'Mike Dang',
+      pic: 'https://ca.slack-edge.com/T024JRAUL-U04DA5A9E-cbb0ada50e25-512'
+    },
+    {
+      name: 'Ali Levitan',
+      pic: 'https://ca.slack-edge.com/T024JRAUL-U0DLW3D47-14a425ff7b5e-512'
+    }
+  ],
   news: [
     {
       eventName: 'Web Readiness Assessment',
@@ -50,7 +74,7 @@ const cohort24 = {
       date: '9/7-9/15'
     },
     {
-      eventName: 'Class begins',
+      eventName: 'Class starts',
       date: '10/12'
     },
     {
@@ -133,25 +157,24 @@ class CohortDetail extends Component {
               <Divider orientation="left" style={{ paddingTop: '24px' }}>Sponsoring</Divider>
               <section style={{ paddingTop: '22px' }}>
                 <Row gutter={16}>
-                  <Col span={8}>
-                    <Card
-                      hoverable
-                      style={{ width: 240 }}
-                      cover={<img alt="student 1" src="https://ca.slack-edge.com/T024JRAUL-UCHNJCX4P-e1fc22a6af1c-512" />}
-                    >
-                      <Meta title="Tucker Wieland" description="" />
-                    </Card>
-                  </Col>
-                  <Col span={8}>
-                    <Card
-                      hoverable
-                      style={{ width: 240 }}
-                      cover={<img alt="student 2" src="https://ca.slack-edge.com/T024JRAUL-U0DKSPFEJ-043fdae6025f-512" />}
-                    >
-                      <Meta title="Tara Abaring" description="" />
-                    </Card>
-                  </Col>
-                  <Col span={8}></Col>
+                  {
+                    cohort.students.map(student => {
+                      return (
+                        <Col span={8}>
+                          <Card
+                            hoverable
+                            style={{ width: 240 }}
+                            cover={<img alt={ student.name } src={ student.pic } />}
+                          >
+                            <Meta title={ student.name } description="" />
+                          </Card>
+                        </Col>
+                      )
+                    })
+                  }
+                  
+                  
+                  
                 </Row>
               </section>
 
