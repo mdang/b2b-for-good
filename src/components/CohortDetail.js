@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { PageHeader, Steps, Descriptions, Tag, Card, Col, Row, Divider } from 'antd';
+import { PageHeader, Steps, Descriptions, Tag, Card, Col, Row, Divider, Table } from 'antd';
 
 import './CohortDetail.css';
 
 const { Step } = Steps;
-// const { TabPane } = Tabs;
 const { Meta } = Card;
 
 const cohort6 = {
@@ -15,7 +14,17 @@ const cohort6 = {
   stage: 'In Progress',
   start: 'June 24, 2020',
   end: 'September 25, 2020',
-  currentTopic: 32
+  currentTopic: 32,
+  news: [
+    {
+      eventName: 'something',
+      date: '6/22'
+    },
+    {
+      eventName: 'something else',
+      date: '7/22'
+    }
+  ]
 }
 
 const cohort24 = {
@@ -26,7 +35,17 @@ const cohort24 = {
   stage: 'Admissions',
   start: 'October 12, 2020',
   end: 'December 19, 2020',
-  currentTopic: 0
+  currentTopic: 0, 
+  news: [
+    {
+      eventName: 'Student interviews',
+      date: '9/22-10/15'
+    },
+    {
+      eventName: 'Class begins',
+      date: '10/23'
+    }
+  ]
 }
 
 class CohortDetail extends Component {
@@ -66,6 +85,17 @@ class CohortDetail extends Component {
       </Descriptions>
     );
 
+    const columns = [
+      {
+        title: 'Event',
+        dataIndex: 'eventName',
+      },
+      {
+        title: 'Date',
+        dataIndex: 'date',
+      }
+    ];
+
     return (
       <div>
         <div style={{  padding: '20px' }}>
@@ -85,6 +115,9 @@ class CohortDetail extends Component {
           tags={<Tag color="blue">{ cohort.stage }</Tag>}
           footer={
             <div>
+              <Divider orientation="left" style={{ paddingTop: '24px' }}>Upcoming Events</Divider>
+              <Table columns={columns} pagination={false} dataSource={ cohort.news } size="middle" />
+
               <Divider orientation="left" style={{ paddingTop: '24px' }}>Sponsoring</Divider>
               <section style={{ paddingTop: '22px' }}>
                 <Row gutter={16}>
