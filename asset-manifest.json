@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/b2b-for-good/static/css/main.d79b2fd6.chunk.css",
-    "main.js": "/b2b-for-good/static/js/main.cd90c24d.chunk.js",
-    "main.js.map": "/b2b-for-good/static/js/main.cd90c24d.chunk.js.map",
+    "main.js": "/b2b-for-good/static/js/main.89f4075c.chunk.js",
+    "main.js.map": "/b2b-for-good/static/js/main.89f4075c.chunk.js.map",
     "runtime-main.js": "/b2b-for-good/static/js/runtime-main.43c33fc5.js",
     "runtime-main.js.map": "/b2b-for-good/static/js/runtime-main.43c33fc5.js.map",
     "static/css/2.f47422e6.chunk.css": "/b2b-for-good/static/css/2.f47422e6.chunk.css",
     "static/js/2.f25909d6.chunk.js": "/b2b-for-good/static/js/2.f25909d6.chunk.js",
     "static/js/2.f25909d6.chunk.js.map": "/b2b-for-good/static/js/2.f25909d6.chunk.js.map",
     "index.html": "/b2b-for-good/index.html",
-    "precache-manifest.6ebff3b77df5365e277a4a98cd202dda.js": "/b2b-for-good/precache-manifest.6ebff3b77df5365e277a4a98cd202dda.js",
+    "precache-manifest.55b5d975730b0f180a3256d40e6ef9db.js": "/b2b-for-good/precache-manifest.55b5d975730b0f180a3256d40e6ef9db.js",
     "service-worker.js": "/b2b-for-good/service-worker.js",
     "static/css/2.f47422e6.chunk.css.map": "/b2b-for-good/static/css/2.f47422e6.chunk.css.map",
     "static/css/main.d79b2fd6.chunk.css.map": "/b2b-for-good/static/css/main.d79b2fd6.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.f47422e6.chunk.css",
     "static/js/2.f25909d6.chunk.js",
     "static/css/main.d79b2fd6.chunk.css",
-    "static/js/main.cd90c24d.chunk.js"
+    "static/js/main.89f4075c.chunk.js"
   ]
 }
