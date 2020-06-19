@@ -36,8 +36,8 @@ class Main extends Component {
               >
                 <Menu.Item key="menu1"><Link to="/b2b-for-good/">Overview</Link></Menu.Item>
                 <SubMenu key="sub2" title="Cohorts">
-                  <Menu.Item key="5"><Link to="/b2b-for-good/cohorts/6">Code for Good (June 2020)</Link></Menu.Item>
-                  <Menu.Item key="6"><Link to="/b2b-for-good/cohorts/24">Code for Good (October 2020)</Link></Menu.Item>
+                  <Menu.Item key="6"><Link to="/b2b-for-good/cohorts/6">Code for Good (June 2020)</Link></Menu.Item>
+                  <Menu.Item key="24"><Link to="/b2b-for-good/cohorts/24">Code for Good (October 2020)</Link></Menu.Item>
                 </SubMenu>
               </Menu>
             </Sider>

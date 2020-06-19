@@ -17,8 +17,8 @@ class Dashboard extends Component {
           name: 'Code for Good (June 2020)'
         },
         status: ['In Progress'],
-        start: '6/24/2020',
-        end: '9/25/2020'
+        start: '6/24',
+        end: '9/25'
       },
       {
         combo: {
@@ -26,8 +26,8 @@ class Dashboard extends Component {
           name: 'Code for Good (October 2020)'
         },
         status: ['Admissions'],
-        start: '10/12/2020',
-        end: '12/19/2020'
+        start: '10/12',
+        end: '12/19'
       }
     ]
 
