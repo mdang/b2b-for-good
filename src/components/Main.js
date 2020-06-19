@@ -27,7 +27,7 @@ class Main extends Component {
             }
           </Breadcrumb>
           <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
-            <Sider className="site-layout-background" width={275}>
+            <Sider className="site-layout-background" width={270}>
               <Menu
                 mode="inline"
                 defaultSelectedKeys={['menu1']}
